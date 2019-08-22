@@ -3,71 +3,69 @@ body{
     margin: 0px;
 }
 nav {
-    ul{
-        margin: 0px;
-        padding: 0px;
-        background: #e3e3e3;
-        list-style: none;
-        li{
-            display: inline-block;
-            a{
-                padding: 15px;
-                color: #292929;
-                text-decoration: none;
-                display: block;
-            }
-            ul{
-                position: absolute;
-                min-width: auto;
-                background: lightgrey;
-                display: none;
-                li{
-                    display: block;
-                    background: #e3e3e3;
-                    &:hover {
-                      background: lightgrey;  
-                    }
-                }
-            }
-            &:hover {
-                background: lightgrey;
-                ul{
-                    display: block;
-                }
-            }
-        }
-        
-    }
     div{
         padding: 0.6em;
         background: #e3e3e3;
         display: none;
         cursor: pointer;
-
-        i{
-            color: #292929;
-            font-size: 24px;
-        }
-        
+        color: #292929;
+        font-size: 24px;
     }
 }
-
-@media (max-width: 768px){
-    nav{
-        div{
-            display: block;
-        }
-    }
-    ul{
-        display: none;
-        position: static;
-        background: #e3e3e3;
-        li{
+ul{
+    margin: 0px;
+    padding: 0px;
+    background: #e3e3e3;
+    list-style-type: none;
+    position: relative;
+    li{
+        display: inline-block;
+        a{
+            padding: 15px;
+            color: #292929;
+            text-decoration: none;
             display: block;
         }
         ul{
-            position: static;
-            background: #e3e3e3;
+            position: absolute;
+            min-width: auto;
+            background: lightgrey;
+            display: none;
+            li{
+                display: block;
+                background: #e3e3e3;
+                &:hover {
+                  background: lightgrey;  
+                }
+            }
+        }
+        &:hover {
+            background: lightgrey;
+            ul{
+                display: block;
+            }
         }
     }
+    
+}
+
+@media (max-width: 768px){
+    nav div {
+            display: block;
+      }
+
+      ul {
+            display: none;
+            position: static;
+            background: #e3e3e3;
+      }
+
+      ul li {
+            display: block;
+      }
+
+      ul ul {
+            position: static;
+            background: #e3e3e3;
+      }
 }

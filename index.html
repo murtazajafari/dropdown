@@ -10,30 +10,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+    
     <nav>
         <div>
             <i class="material-icons">cloud</i>
         </div>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li>
-                <a href="">Dropdown 1</a>
+                <a href="#">Dropdown 1</a>
                 <ul>
-                    <li><a href="">Product 1</a></li>
-                    <li><a href="">Product 2</a></li>
-                    <li><a href="">Product 3</a></li>
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <li><a href="#">Product 3</a></li>
                 </ul>
             
             </li>
-            <li><a href="">About</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
         </ul>
     </nav>
 
     <script type="text/javascript">
         $("nav div").click(function(){
             $("ul").slideToggle();
-            $("ul li").css("display", "none");
+            $("ul ul").css("display", "none");
         });
 
         $("ul li").click(function(){
