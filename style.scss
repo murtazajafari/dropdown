@@ -25,15 +25,24 @@ nav {
                     display: block;
                     background: #e3e3e3;
                     &:hover {
-                        
+                      background: lightgrey;  
                     }
                 }
             }
             &:hover {
+                background: lightgrey;
                 ul{
                     display: block;
                 }
             }
+        }
+        
+    }
+    div{
+        padding: 10px 15px;
+        background: #e3e3e3;
+        i{
+            color: #000;
         }
         
     }

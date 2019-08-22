@@ -33,7 +33,24 @@ nav ul li ul li {
   background: #e3e3e3;
 }
 
+nav ul li ul li:hover {
+  background: lightgrey;
+}
+
+nav ul li:hover {
+  background: lightgrey;
+}
+
 nav ul li:hover ul {
   display: block;
+}
+
+nav div {
+  padding: 10px 15px;
+  background: #e3e3e3;
+}
+
+nav div i {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
