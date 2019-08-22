@@ -30,13 +30,14 @@ ul li a {
   text-decoration: none;
   display: block;
 }
+
 ul li:hover {
   background: lightgrey;
 }
 
 ul ul {
   position: absolute;
-  min-width: 200px;
+  min-width: auto;
   background: lightgrey;
   display: none;
 }
@@ -47,7 +48,7 @@ ul ul li {
 }
 
 ul li:hover ul {
-  display: block
+  display: block;
 }
 
 @media (max-width: 768px) {

@@ -26,26 +26,26 @@ ul{
             text-decoration: none;
             display: block;
         }
-        ul{
-            position: absolute;
-            min-width: auto;
+        &:hover{
             background: lightgrey;
-            display: none;
-            li{
-                display: block;
-                background: #e3e3e3;
-                &:hover {
-                  background: lightgrey;  
-                }
-            }
-        }
-        &:hover {
-            background: lightgrey;
-            ul{
-                display: block;
-            }
         }
     }
+    
+    ul{
+        position: absolute;
+        min-width: auto;
+        background: lightgrey;
+        display: none;
+        li{
+            display: block;
+            background: #e3e3e3;
+        }
+    }
+    & li:hover {
+        ul{
+            display: block;
+        }
+    } 
     
 }
 
