@@ -39,11 +39,35 @@ nav {
         
     }
     div{
-        padding: 10px 15px;
+        padding: 0.6em;
         background: #e3e3e3;
+        display: none;
+        cursor: pointer;
+
         i{
-            color: #000;
+            color: #292929;
+            font-size: 24px;
         }
         
+    }
+}
+
+@media (max-width: 768px){
+    nav{
+        div{
+            display: block;
+        }
+    }
+    ul{
+        display: none;
+        position: static;
+        background: #e3e3e3;
+        li{
+            display: block;
+        }
+        ul{
+            position: static;
+            background: #e3e3e3;
+        }
     }
 }
