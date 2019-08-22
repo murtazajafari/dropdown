@@ -37,8 +37,12 @@
             $("ul ul").css("display", "none");
         });
 
-        $("ul li").click(function(){
-            $("ul ul").slideUp();
+        // $("ul li").click(function(){
+        //     $("ul ul").slideUp();
+        //     $(this).find('ul').slideToggle();
+        // });
+        $('ul li').click(function () {
+            $(this).siblings().find('ul').slideUp();
             $(this).find('ul').slideToggle();
         });
 
