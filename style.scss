@@ -1,0 +1,40 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    ul{
+        margin: 0px;
+        padding: 0px;
+        background: #e3e3e3;
+        list-style: none;
+        li{
+            display: inline-block;
+            a{
+                padding: 15px;
+                color: #292929;
+                text-decoration: none;
+                display: block;
+            }
+            ul{
+                position: absolute;
+                min-width: auto;
+                background: lightgrey;
+                display: none;
+                li{
+                    display: block;
+                    background: #e3e3e3;
+                    &:hover {
+                        
+                    }
+                }
+            }
+            &:hover {
+                ul{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+}

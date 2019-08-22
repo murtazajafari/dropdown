@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  background: #e3e3e3;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 15px;
+  color: #292929;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li ul {
+  position: absolute;
+  min-width: auto;
+  background: lightgrey;
+  display: none;
+}
+
+nav ul li ul li {
+  display: block;
+  background: #e3e3e3;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
