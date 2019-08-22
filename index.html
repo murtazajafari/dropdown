@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dropdown</title>
     <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -28,5 +29,23 @@
             <li><a href="">FAQ</a></li>
         </ul>
     </nav>
+
+    <script type="text/javascript">
+        $("nav div").click(function(){
+            $("ul").slideToggle();
+            $("ul li").css("display", "none");
+        });
+
+        $("ul li").click(function(){
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+        });
+
+        $(window).resize(function(){
+            if($(window).width() > 768){
+                $("ul").removeAttr('style');
+            }
+        });
+    </script>
 </body>
 </html>
